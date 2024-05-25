@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="container">
+        <h3>Dito</h3>
+        <div id="time-wrapper">
+            <p id="time">00:00</p>
+        </div>
+        <div id="words">
+            <div class="active-row">
+                <input id="first-letter" class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+            </div>
+            <div>
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+            </div>
+            <div>
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+            </div>
+            <div>
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+            </div>
+            <div>
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+            </div>
+            <div>
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+            </div>
+        </div>
+        <div id="keyboard">
+            <div class="keyboard-line">
+                <input type="button" class="letter" value="Q">
+                <input type="button" class="letter" value="W">
+                <input type="button" class="letter" value="E">
+                <input type="button" class="letter" value="R">
+                <input type="button" class="letter" value="T">
+                <input type="button" class="letter" value="Y">
+                <input type="button" class="letter" value="U">
+                <input type="button" class="letter" value="I">
+                <input type="button" class="letter" value="O">
+                <input type="button" class="letter" value="P">
+            </div>
+            <div class="keyboard-line">
+                <input type="button" class="letter" value="A">
+                <input type="button" class="letter" value="S">
+                <input type="button" class="letter" value="D">
+                <input type="button" class="letter" value="F">
+                <input type="button" class="letter" value="G">
+                <input type="button" class="letter" value="H">
+                <input type="button" class="letter" value="J">
+                <input type="button" class="letter" value="K">
+                <input type="button" class="letter" value="L">
+                
+            </div>
+            <div class="keyboard-line">
+                <input type="button" class="enter" value="ENTER">
+                <input type="button" class="letter" value="Z">
+                <input type="button" class="letter" value="X">
+                <input type="button" class="letter" value="C">
+                <input type="button" class="letter" value="V">
+                <input type="button" class="letter" value="B">
+                <input type="button" class="letter" value="N">
+                <input type="button" class="letter" value="M">
+                <input type="button" class="clear" value="<">
+            </div>
+        </div>
+    </div>
+    <div id="modal-alert">
+        <p id="modal-alert-msg"></p>
+    </div>
+
+    <div id="modal-end">
+        
+        <div id="modal-end-container">
+            <a id="modal-end-close">X</a>
+            <h3 id="modal-end-result"></h3>
+            <p>A palavra correta é</p>
+            <div>
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+                <input class="word-input" readonly type="text">
+            </div>
+            <br>
+            <div>
+                <input id="btn-new-game" type="button" value="Novo jogo">
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="valid-words.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

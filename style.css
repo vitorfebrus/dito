@@ -1,0 +1,186 @@
+:root {
+    --correct-letter: #d7f24c;
+    --partial-correct-letter: #84add4;
+    --wrong-letter: #9da3ae;
+  }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    text-align: center;
+}
+
+input {
+    width: 45px;
+    height: 45px;
+    margin: 2px;
+    border-radius: 7px;
+    border: 2px solid lightgrey;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: default;
+}
+
+#words {
+    background-color: rgb(241, 241, 241);
+    padding: 10px;
+}
+
+#words input, #modal-end .word-input {
+    font-size: 30px;
+    text-align: center;
+    pointer-events: none; 
+}
+
+#words .active-row input {
+    pointer-events: all; 
+}
+
+.correct-letter {
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    background-color: var(--correct-letter);
+    color: black;
+}
+
+.partial-correct-letter {
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    background-color: var(--partial-correct-letter);
+    color: white;
+}
+
+.wrong-letter {
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    background-color: var(--wrong-letter);
+    color: white;
+}
+
+#keyboard {
+    padding: 15px;
+}
+
+#keyboard input {
+    background-color: rgb(245, 245, 245);
+    border: 2px solid rgb(251, 251, 251);
+}
+
+#keyboard input:hover {
+    cursor: pointer;
+    background-color: rgb(240, 240, 240);
+}
+
+#keyboard input[value="ENTER"] {
+    width: fit-content;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+}
+
+#keyboard input[value="ENTER"]:hover {
+    background-color: rgb(20, 20, 20);
+}
+
+#time-wrapper {
+    border: 1px solid lightgray;
+    border-width: 1px 0;
+    margin: 0 0 50px 0;
+}
+
+#time {
+    font-size: small;
+}
+
+#modal-alert {
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 60%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#modal-alert-msg {
+    padding: 15px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: small;
+}
+
+#modal-end {
+    position: fixed;
+    top: 0;
+    display: none;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+    font-weight: bold;
+}
+
+#modal-end-container {
+    width: 30%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    padding: 1% 2% 5%;
+    top: 20%;
+    border-radius: 20px;;
+}
+
+#modal-end input[type="button"] {
+    width: fit-content;
+    background-color: #c4170c;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#modal-end input[type="button"]:hover {
+    background-color: #c1342a;
+}
+
+#modal-end-container a {
+    text-align: right;
+    cursor: pointer;
+}
+
+@media (min-width: 300px) {
+    #keyboard input {
+        width: 8%;
+    }
+
+    #words {
+        height: 60%;
+        padding: 80px 10px;
+    }
+
+    #keyboard {
+        padding: 10px 0;
+        height: 40%;
+    }
+
+    .keyboard-line {
+        white-space: nowrap;
+    }
+
+    #modal-end-container {
+        width: 90%;
+    }
+}
