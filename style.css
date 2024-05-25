@@ -161,7 +161,7 @@ input {
     cursor: pointer;
 }
 
-@media (min-width: 300px) {
+@media (max-width: 600px) {
     #keyboard input {
         width: 8%;
     }
